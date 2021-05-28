@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 // var React = require('react');
 // var ReactDOM = require('react-dom');
 
+const name = "Chris";
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 const fname = "Bill";
 const lname = "Hank";
@@ -13,10 +16,10 @@ const num = 1;
 const number = 3;
 
 ReactDOM.render(
-    <div>
-        <h1>Hello {fname} {lname}!</h1>
-        <p>Your lucky number is {Math.floor(Math.random() * 10)}</p>
-    </div>,
+    // <div>
+    //     <h1>Hello {fname} {lname}!</h1>
+    //     <p>Your lucky number is {Math.floor(Math.random() * 10)}</p>
+    // </div>,
 
 //    Challenge 1: Create a food list
 // <div>
@@ -29,6 +32,10 @@ ReactDOM.render(
 //         <li>random food</li>
 //     </ul>
 // </div>,
+    <div>
+        <p>Created by {name}</p>
+        <p>Copyright {year}</p>
+    </div>,
     document.getElementById('root')
 );
 
