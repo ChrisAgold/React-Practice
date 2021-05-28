@@ -3,26 +3,32 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
 // var React = require('react');
 // var ReactDOM = require('react-dom');
 
+
+const fname = "Bill";
+const lname = "Hank";
+const num = 1;
+const number = 3;
+
 ReactDOM.render(
-    // <div>
-    //     <h1>Hello World</h1>
-    //     <p>This is a paragraph</p>
-    // </div>,
+    <div>
+        <h1>Hello {fname} {lname}!</h1>
+        <p>Your lucky number is {Math.floor(Math.random() * 10)}</p>
+    </div>,
+
 //    Challenge 1: Create a food list
-<div>
-    <h1>Food List</h1>
-    <ul>
-        <li>random food</li>
-        <li>random food</li>
-        <li>random food</li>
-        <li>random food</li>
-        <li>random food</li>
-    </ul>
-</div>,
+// <div>
+//     <h1>Food List</h1>
+//     <ul>
+//         <li>random food</li>
+//         <li>random food</li>
+//         <li>random food</li>
+//         <li>random food</li>
+//         <li>random food</li>
+//     </ul>
+// </div>,
     document.getElementById('root')
 );
 
