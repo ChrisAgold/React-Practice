@@ -4,7 +4,7 @@ import './App.css';
 function App() {
     let count = 5;
 
-    //get endpoimt resi;ts
+    //get endpoint results
     return (
         <div className="App">
             Donkey {count}

@@ -8,10 +8,21 @@ import reportWebVitals from './reportWebVitals';
 // var ReactDOM = require('react-dom');
 
 ReactDOM.render(
-    <div>
-        <h1>Hello World</h1>
-        <p>This is a paragraph</p>
-    </div>,
+    // <div>
+    //     <h1>Hello World</h1>
+    //     <p>This is a paragraph</p>
+    // </div>,
+//    Challenge 1: Create a food list
+<div>
+    <h1>Food List</h1>
+    <ul>
+        <li>random food</li>
+        <li>random food</li>
+        <li>random food</li>
+        <li>random food</li>
+        <li>random food</li>
+    </ul>
+</div>,
     document.getElementById('root')
 );
 
