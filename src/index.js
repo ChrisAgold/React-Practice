@@ -15,6 +15,16 @@ const lname = "Hank";
 const num = 1;
 const number = 3;
 
+const img = "http://picsum.photos/200"
+
+const customStyle = {
+    color: "red",
+    fontSize: "20px",
+    border: "1px solid black"
+}
+// change style on the go
+customStyle.color = "blue";
+
 ReactDOM.render(
     // <div>
     //     <h1>Hello {fname} {lname}!</h1>
@@ -37,11 +47,11 @@ ReactDOM.render(
 //         <p>Created by {name}</p>
 //         <p>Copyright {year}</p>
 //     </div>,
+
     <div>
+        <h1 style={customStyle}>Hello World!</h1>
         <div>
-            <img className="img" src="https://ca-times.brightspotcdn.com/dims4/default/bfba83d/2147483647/strip/true/crop/1920x1080+0+0/resize/1486x836!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa9%2F29%2F9095034649138782a2e1d7b4a3e0%2Fds-still-012.jpg"/>
-            <img className="img" src="http://www.austinchronicle.com/binary/9512/demonslayer-movie-web.jpg"/>
-            <img className="img" src="https://media.comicbook.com/2021/02/demon-slayer-live-action-movie-hollywood-blockbuster-anime-manga-1257283-1280x0.jpeg"/>
+            <img src={img + "?grayscale"} alt="random image"/>
         </div>
     </div>,
     document.getElementById('root')
