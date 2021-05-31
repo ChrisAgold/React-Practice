@@ -17,13 +17,31 @@ const number = 3;
 
 const img = "http://picsum.photos/200"
 
-const customStyle = {
-    color: "red",
-    fontSize: "20px",
-    border: "1px solid black"
-}
+
 // change style on the go
-customStyle.color = "blue";
+
+
+// TIME CHALLENGE
+const date = new Date();
+const currentTime = date.getHours();
+
+const customStyle = {
+    color: ""
+}
+// console.log(currentTime);
+
+let greeting;
+
+if (currentTime < 12) {
+    greeting = "Good Morning"
+    customStyle.color = "red"
+} else if (currentTime < 18) {
+    greeting = "Good Afternoon"
+    customStyle.color = "green"
+} else {
+    greeting = "Good Night"
+    customStyle.color = "blue"
+}
 
 ReactDOM.render(
     // <div>
@@ -48,12 +66,15 @@ ReactDOM.render(
 //         <p>Copyright {year}</p>
 //     </div>,
 
-    <div>
-        <h1 style={customStyle}>Hello World!</h1>
-        <div>
-            <img src={img + "?grayscale"} alt="random image"/>
-        </div>
-    </div>,
+    // <div>
+    //     <h1 style={customStyle}>Hello World!</h1>
+    //     <div>
+    //         <img src={img + "?grayscale"} alt="random image"/>
+    //     </div>
+    // </div>,
+
+    <h1 className="heading" style={customStyle}>{greeting}</h1>,
+
     document.getElementById('root')
 );
 
