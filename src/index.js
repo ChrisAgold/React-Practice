@@ -6,7 +6,12 @@ import Card from './Card.js';
 import 'tachyons';
 
 ReactDOM.render(
-    <Card/>,
+    <div>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+    </div>,
     document.getElementById('root')
 );
 
