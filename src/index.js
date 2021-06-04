@@ -7,6 +7,7 @@ import * as pi from "./math.js";
 import * as cal from "./calculator.js";
 
 import Hello from './Hello.js'
+import 'tachyons';
 
 // ReactDOM.render(
 //     <ul>
@@ -21,7 +22,7 @@ import Hello from './Hello.js'
 ReactDOM.render(
     <React.StrictMode>
         <App/>
-        <Hello/>
+        <Hello greeting={'Hello React Ninja'}/>
     </React.StrictMode>,
     document.getElementById('root')
 );
