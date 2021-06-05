@@ -1,9 +1,8 @@
 import React from 'react';
 import Card from "./Card";
-import {robots} from "./robots";
 
 // Loop through all robots in object array
-const CardList = ({robots}) => {
+const CardList = ({ robots }) => {
     return (
         <div>
             {
@@ -19,4 +18,5 @@ const CardList = ({robots}) => {
         </div>
     );
 }
+
 export default CardList;
