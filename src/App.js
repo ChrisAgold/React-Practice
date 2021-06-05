@@ -1,17 +1,11 @@
-import './App.css';
-import React, { Component } from "react";
-import './App.css';
+import React from 'react';
+import CardList from "./CardList";
+import {robots} from "./robots";
 
-class App extends React.Component {
-    render() {
-        return (
-            <div className="App">
-                <header className="App-header">
-                    <h1>Hello</h1>
-                </header>
-            </div>
-        );
-    }
+const App = () => {
+    return (
+        <CardList robots={robots}/>
+    );
 }
 
 export default App;
