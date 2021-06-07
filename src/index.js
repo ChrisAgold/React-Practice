@@ -1,13 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import 'tachyons';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+
+function Card(props) {
+    return <div>
+        <h2>{props.name}</h2>
+        <img
+            src={props.img}
+            alt="avatar"
+        />
+        <p>{props.tel}</p>
+        <p>{props.email}</p>
+    </div>
+}
 
 ReactDOM.render(
-    <App/>,
-    document.getElementById('root')
+    <div>
+        <h1>My Contacts</h1>
+        <Card name="Beyonce"
+              img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
+              tel="+123 456 789" email="b@beyonce.com"/>
+        <input id="fName"/>
+    </div>,
+    document.getElementById("root")
 );
-
-reportWebVitals();
