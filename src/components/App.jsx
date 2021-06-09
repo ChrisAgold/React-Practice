@@ -1,7 +1,8 @@
 import React from "react";
 import Card from "./Card.jsx"
 import contacts from "../contacts";
-console.log(contacts);
+
+
 function App() {
     return (
         <div>
