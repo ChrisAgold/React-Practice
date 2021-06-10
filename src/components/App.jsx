@@ -1,22 +1,21 @@
-import React from "react";
-
-var isDone = false;
-
-function strike() {
-    isDone = true;
-}
-
-function unStrike() {
-    isDone = false;
-}
+import React, {useState} from "react";
 
 function App() {
+    const [count, setCount] = useState(0);
+
+    function increase() {
+        setCount(count + 1);
+    }
+
+    function decrease() {
+        setCount(count - 1);
+    }
+
     return (
-        <div>
-            <p id="strike">牛乳?</p>
-            <p>ネコ</p>
-            <button onClick={strike}>Change to strike through</button>
-            <button onClick={unStrike}>Change back</button>
+        <div className="container">
+            <h1>{count}</h1>
+            <button onClick={increase}>+</button>
+            <button onClick={decrease}>-</button>
         </div>
     );
 }
