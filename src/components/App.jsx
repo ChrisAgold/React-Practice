@@ -1,23 +1,24 @@
 import React from "react";
-import Login from './Login.jsx';
-import Form from './Form.jsx';
 
-var isLoggedIn = false;
-var userIsRegistered = false;
+var isDone = false;
 
-// const currentTime = new Date(2021, 6, 9).getHours();
-// console.log(currentTime);
+function strike() {
+    isDone = true;
+}
+
+function unStrike() {
+    isDone = false;
+}
 
 function App() {
-    return <div className="container"> {
-        // isLoggedIn === true ? <h1>Hello</h1> : <Login/>
-        // can also be written as this:
-        // isLoggedIn ? <h1>Hello</h1> : <Login/>
-        // currentTime > 12 && <h1>Why are you still working?</h1>
-        <Form
-            isRegistered={userIsRegistered}
-        />
-    }</div>;
+    return (
+        <div>
+            <p id="strike">牛乳?</p>
+            <p>ネコ</p>
+            <button onClick={strike}>Change to strike through</button>
+            <button onClick={unStrike}>Change back</button>
+        </div>
+    );
 }
 
 export default App;
