@@ -3,6 +3,7 @@ import Tweet from "./components/Tweet";
 import ReactDOM from "react-dom";
 import TweetList from "./components/TweetList";
 import CreateTweet from "./components/CreateTweet";
+import './styles/App.css';
 
 function App() {
     // State
@@ -10,9 +11,9 @@ function App() {
     const [textInput, setTextInput] = useState("");
     const [tweets, setTweets] = useState([]);
 
-
     return (
         <div>
+            <div>Twitter Light</div>
             <CreateTweet textInput={textInput}
                          setTextInput={setTextInput}
                          tweets={tweets}
