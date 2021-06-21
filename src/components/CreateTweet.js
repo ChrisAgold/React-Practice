@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const CreateTweet = () => {
+    // State
+    const [textInput, setTextInput] = useState("");
+
+    // Functions
+    const userInputHandler = (e) => {
+        setTextInput(e.target.value)
+    };
+
     return (
         <form>
-            <textarea cols="50" rows="5">
-<button>Submit</button>
-            </textarea>
+            <textarea value={textInput} onChange={userInputHandler} cols="50" rows="5" />
+            <button>Submit</button>
+            <h1 onClick={() => setTextInput("")}>{textInput}</h1>
         </form>
     );
 }

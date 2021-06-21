@@ -1,19 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Tweet from "./components/Tweet";
 import ReactDOM from "react-dom";
 import TweetList from "./components/TweetList";
 import CreateTweet from "./components/CreateTweet";
 
 function App() {
-    // JS Write Here
-    const name = "Tech Boi";
-    const message = "The tweet";
+    const name = 'TechBoi';
+    const message = 'Hello';
 
     return (
         <div>
-            <h1>Hello</h1>
             <CreateTweet/>
             <TweetList name={name} message={message}/>
+
         </div>
     );
 }
