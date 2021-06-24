@@ -1,33 +1,10 @@
-import React, {useState, useEffect} from "react";
-import Tweet from "./components/Tweet";
-import TweetList from "./components/TweetList";
-import CreateTweet from "./components/CreateTweet";
-import './styles/App.css';
-
+import React from 'react'
 function App() {
-
-    // State
-    const [name, setName] = useState("Techboi");
-    const [textInput, setTextInput] = useState("");
-    const [tweets, setTweets] = useState([]);
-
-    useEffect(() => {
-        console.log("we run a function yay")
-    },[textInput]);
-
     return (
-        <div>
-            <div>Twitter Light</div>
-            <CreateTweet textInput={textInput}
-                         setTextInput={setTextInput}
-                         tweets={tweets}
-                         setTweets={setTweets}/>
-
-            <TweetList name={name} tweets={tweets} setTweets={setTweets}/>
+        <div className='container'>
+            <h2>Advanced Tutorial</h2>
         </div>
-    );
+    )
 }
 
-export default App;
-
-
+export default App
