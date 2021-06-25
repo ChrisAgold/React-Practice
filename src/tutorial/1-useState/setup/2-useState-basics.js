@@ -7,11 +7,12 @@ const UseStateBasics = () => {
 
 // Function
     const handleClick = () => {
-        if(text === 'title') {
-            setText('こんにちは')
-        } else {
-            setText('title')
-        }
+        // if(text === 'title') {
+        //     setText('こんにちは')
+        // } else {
+        //     setText('title')
+        // }
+        text === 'title' ? setText('こんにちは') : setText('title');
     }
 
     return (
